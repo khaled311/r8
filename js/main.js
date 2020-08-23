@@ -100,6 +100,11 @@ $(function () {
         } else {
             $(".TopNav").removeClass("back");
         }
+        if ($(window).scrollTop() >= $(".TopNav").innerHeight()) {
+            $(".TopNav").addClass("hide");
+        } else {
+            $(".TopNav").removeClass("hide");
+        }
         AOS.refresh();
         if ($(window).scrollTop() >= 200) {
             $(".whats, .live").addClass("show");
