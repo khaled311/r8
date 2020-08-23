@@ -1384,6 +1384,12 @@ html[dir="ltr"] .services-section .school-images {
   width: max-content;
 }
 
+@media (max-width: 480px) {
+  .services-section .shop-images div {
+    width: initial;
+  }
+}
+
 .services-section .shop-images div.mobile {
   bottom: -95px;
   left: 40%;
@@ -2281,7 +2287,7 @@ footer .end p {
   margin: 0;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   footer .end p {
     text-align: center;
   }
