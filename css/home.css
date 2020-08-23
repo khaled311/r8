@@ -1396,6 +1396,7 @@ html[dir="ltr"] .services-section .school-images {
   .services-section .shop-images div.mobile {
     left: 30%;
     bottom: 30px;
+    width: 140px;
   }
 }
 
@@ -1408,6 +1409,7 @@ html[dir="ltr"] .services-section .school-images {
 @media (max-width: 480px) {
   .services-section .shop-images div.bag1 {
     right: 4%;
+    width: 243px;
   }
 }
 
@@ -1426,6 +1428,7 @@ html[dir="ltr"] .services-section .school-images {
 @media (max-width: 480px) {
   .services-section .shop-images div.bag2 {
     left: 3%;
+    width: 179px;
   }
 }
 
@@ -1445,6 +1448,7 @@ html[dir="ltr"] .services-section .school-images {
   .services-section .shop-images div.gift1 {
     right: 9%;
     bottom: 50px;
+    width: 116px;
   }
 }
 
@@ -1464,6 +1468,7 @@ html[dir="ltr"] .services-section .school-images {
   .services-section .shop-images div.gift2 {
     left: -4%;
     bottom: 16%;
+    width: 175px;
   }
 }
 
