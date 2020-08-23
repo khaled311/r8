@@ -86,6 +86,24 @@ $(function () {
         }
     });
 
+    // Navbar Effect On Scroll
+    var zero = 0;
+    $(window).on("scroll", function () {
+        $(".TopNav").toggleClass("hide", $(window).scrollTop() > zero);
+        zero = $(window).scrollTop();
+    });
+
+    $(window).on("scroll", function () {
+        if (
+            $(window).scrollTop() >=
+            $("header").offset().top + $("header").innerHeight()
+        ) {
+            $(".TopNav").addClass("back");
+        } else {
+            $(".TopNav").removeClass("back");
+        }
+    });
+
     // ParticlesJS Config.
     particlesJS("particles-js", {
         particles: {
