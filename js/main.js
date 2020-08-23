@@ -195,6 +195,7 @@ $(function () {
 
     AOS.init({
         once: false,
+        disable: "mobile",
     });
 
     $("body").niceScroll({

@@ -32,6 +32,12 @@ body {
   text-align: right;
 }
 
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden !important;
+  }
+}
+
 html[dir="ltr"] body {
   direction: ltr;
   text-align: left;
