@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="106" viewBox="0 0 110 106">
+  <defs>
+    <filter id="Union_2" x="0" y="0" width="110" height="106" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3083" data-name="Group 3083" transform="translate(-1218 -5821)">
+    <g transform="matrix(1, 0, 0, 1, 1218, 5821)" filter="url(#Union_2)">
+      <path id="Union_2-2" data-name="Union 2" d="M-411-918h10l-5,9Zm-35,0a6,6,0,0,1-6-6v-67a6,6,0,0,1,6-6h80a6,6,0,0,1,6,6v67a6,6,0,0,1-6,6Z" transform="translate(461 1006)" fill="#fff"/>
+    </g>
+    <text id="اترك_رسالة" data-name="اترك رسالة" transform="translate(1309 5892)" fill="#244d75" font-size="16" font-family="Tajawal-Medium, Tajawal" font-weight="500"><tspan x="-73.28" y="0">اترك رسالة</tspan></text>
+    <g id="emoji" transform="translate(1258 5843)">
+      <circle id="Ellipse_80" data-name="Ellipse 80" cx="15" cy="15" r="15" fill="#ffd54f"/>
+      <g id="Group_3082" data-name="Group 3082" transform="translate(5.063 7.594)">
+        <path id="Path_7034" data-name="Path 7034" d="M23.309,14.4a.947.947,0,0,0-.773-.4H5.449a.95.95,0,0,0-.9,1.263,10.007,10.007,0,0,0,18.879,0A.951.951,0,0,0,23.309,14.4Z" transform="translate(-3.867 -3.875)" fill="#e53935"/>
+        <path id="Path_7035" data-name="Path 7035" d="M19.094,6a2.876,2.876,0,0,0-1.664.524A2.876,2.876,0,0,0,15.765,6,2.689,2.689,0,0,0,13,8.6c0,2.181,3.245,4.494,3.9,4.936a.951.951,0,0,0,1.066,0c.652-.442,3.9-2.755,3.9-4.936A2.689,2.689,0,0,0,19.094,6Z" transform="translate(-1.609 -6)" fill="#e53935"/>
+        <path id="Path_7036" data-name="Path 7036" d="M10.094,6a2.876,2.876,0,0,0-1.664.524A2.876,2.876,0,0,0,6.765,6,2.689,2.689,0,0,0,4,8.6c0,2.181,3.245,4.494,3.9,4.936a.951.951,0,0,0,1.066,0c.652-.442,3.9-2.755,3.9-4.936A2.689,2.689,0,0,0,10.094,6Z" transform="translate(-4 -6)" fill="#e53935"/>
+      </g>
+    </g>
+  </g>
+</svg>

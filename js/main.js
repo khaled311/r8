@@ -11,6 +11,7 @@ $(function () {
         autoplay: {
             delay: 5000,
         },
+        speed: 700,
         loop: true,
         spaceBetween: 20,
         slidesPerView: 1,
@@ -40,9 +41,9 @@ $(function () {
     // Categories Slider
     var testimsswiper = new Swiper(".testims .swiper-container", {
         grabCursor: true,
-        // autoplay: {
-        //     delay: 5000,
-        // },
+        autoplay: {
+            delay: 5000,
+        },
         loop: true,
         slidesPerView: 1,
         pagination: {
@@ -94,10 +95,7 @@ $(function () {
     });
 
     $(window).on("scroll", function () {
-        if (
-            $(window).scrollTop() >=
-            $("header").offset().top + $("header").innerHeight()
-        ) {
+        if ($(window).scrollTop() > $(".TopNav").innerHeight()) {
             $(".TopNav").addClass("back");
         } else {
             $(".TopNav").removeClass("back");
