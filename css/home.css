@@ -2529,6 +2529,7 @@ footer .end .socials svg:hover path {
   position: fixed;
   right: 24px;
   bottom: 62px;
+  z-index: 999;
 }
 
 .live {
