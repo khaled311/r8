@@ -95,11 +95,12 @@ $(function () {
     });
 
     $(window).on("scroll", function () {
-        if ($(window).scrollTop() > $(".TopNav").innerHeight()) {
+        if ($(window).scrollTop() >= $("header").innerHeight()) {
             $(".TopNav").addClass("back");
         } else {
             $(".TopNav").removeClass("back");
         }
+        AOS.refresh();
     });
 
     // ParticlesJS Config.

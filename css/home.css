@@ -542,7 +542,7 @@ header #particles-js {
 header .TopNav {
   padding-top: 20px;
   padding-bottom: 10px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -552,6 +552,7 @@ header .TopNav {
 }
 
 header .TopNav.back {
+  position: fixed;
   background-image: -webkit-gradient(linear, right top, left top, from(#12405a), to(#264f78));
   background-image: linear-gradient(270deg, #12405a 0%, #264f78 100%);
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
@@ -565,6 +566,10 @@ header .TopNav .content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .TopNav .logo {
+  height: 70px;
 }
 
 @media (max-width: 991px) {
@@ -1000,6 +1005,7 @@ header .social a:hover {
   font-family: med;
   color: #000000;
   line-height: 25px;
+  margin-bottom: 0;
 }
 
 .about-section {
