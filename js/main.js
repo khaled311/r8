@@ -101,6 +101,11 @@ $(function () {
             $(".TopNav").removeClass("back");
         }
         AOS.refresh();
+        if ($(window).scrollTop() >= 200) {
+            $(".whats, .live").addClass("show");
+        } else {
+            $(".whats, .live").removeClass("show");
+        }
     });
 
     // ParticlesJS Config.

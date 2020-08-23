@@ -273,6 +273,28 @@ ul.res {
   }
 }
 
+@-webkit-keyframes anim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes anim {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .loader {
   position: fixed;
   top: 0;
@@ -284,7 +306,7 @@ ul.res {
 }
 
 .loader img {
-  width: 150px;
+  width: 250px;
 }
 
 .navover {
@@ -721,7 +743,7 @@ header .slider .swiper-pagination {
   header .slider .swiper-pagination {
     top: unset;
     right: unset;
-    bottom: -50px;
+    bottom: -20px;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -970,6 +992,15 @@ header .social a:hover {
   text-align: center;
 }
 
+.overview-sec .col-lg-4:hover .img svg {
+  -webkit-animation: anim 0.7s linear;
+          animation: anim 0.7s linear;
+}
+
+.overview-sec .col-lg-4:hover h2 {
+  color: #d1a42e;
+}
+
 .overview-sec .img {
   width: 98.5px;
   height: 100px;
@@ -979,20 +1010,28 @@ header .social a:hover {
 
 .overview-sec .img svg {
   position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .overview-sec .img svg:first-child {
   top: 0;
   left: 0;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
 }
 
 .overview-sec .img svg:last-child {
   bottom: 0;
   right: 0;
   z-index: -1;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
 }
 
 .overview-sec h2 {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   margin-top: 40px;
   margin-bottom: 19px;
   font-size: 25px;
@@ -2517,13 +2556,12 @@ footer .end .socials svg {
 }
 
 footer .end .socials svg path {
-  fill: rgba(81, 81, 79, 0.3);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-footer .end .socials svg:hover path {
-  fill: #244d75;
+footer .end .socials svg:hover {
+  opacity: 0.8;
 }
 
 .whats,
@@ -2536,6 +2574,16 @@ footer .end .socials svg:hover path {
   right: 24px;
   bottom: 62px;
   z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.whats.show,
+.live.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .live {
