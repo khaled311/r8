@@ -740,7 +740,7 @@ header .slider .swiper-container {
 
 header .slider .swiper-pagination {
   top: 50%;
-  right: -80px;
+  right: -100px;
   -webkit-transform: rotate(90deg) translateY(-50%);
           transform: rotate(90deg) translateY(-50%);
   height: 0;
@@ -764,7 +764,7 @@ header .slider .swiper-pagination span {
   background-color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin: 2.5px;
+  margin: 0 2.5px;
 }
 
 header .slider .swiper-pagination span:focus {
@@ -888,6 +888,12 @@ header .slider .swiper-slide .slider-pic-animate {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 70px;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  header .slider .swiper-slide .slider-pic-animate {
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 991px) {
