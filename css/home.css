@@ -1299,18 +1299,14 @@ html[dir="ltr"] .services-section .school-images {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: initial;
   }
 }
 
 @media (max-width: 480px) {
   .services-section .school-images svg {
     width: 80%;
+    margin: auto;
   }
 }
 
@@ -1332,7 +1328,7 @@ html[dir="ltr"] .services-section .school-images {
   .services-section .school-images .line {
     width: 30px;
     left: 44%;
-    top: 22%;
+    top: 20.8%;
   }
 }
 
@@ -1398,8 +1394,8 @@ html[dir="ltr"] .services-section .school-images {
 
 @media (max-width: 480px) {
   .services-section .shop-images div.mobile {
-    left: 33%;
-    bottom: 50px;
+    left: 30%;
+    bottom: 30px;
   }
 }
 
@@ -1411,7 +1407,7 @@ html[dir="ltr"] .services-section .school-images {
 
 @media (max-width: 480px) {
   .services-section .shop-images div.bag1 {
-    right: 10%;
+    right: 4%;
   }
 }
 
@@ -1429,7 +1425,7 @@ html[dir="ltr"] .services-section .school-images {
 
 @media (max-width: 480px) {
   .services-section .shop-images div.bag2 {
-    left: 5%;
+    left: 3%;
   }
 }
 
@@ -1447,8 +1443,8 @@ html[dir="ltr"] .services-section .school-images {
 
 @media (max-width: 480px) {
   .services-section .shop-images div.gift1 {
-    right: 16%;
-    bottom: 65px;
+    right: 9%;
+    bottom: 50px;
   }
 }
 
@@ -1466,7 +1462,7 @@ html[dir="ltr"] .services-section .school-images {
 
 @media (max-width: 480px) {
   .services-section .shop-images div.gift2 {
-    left: 4%;
+    left: -4%;
     bottom: 16%;
   }
 }
