@@ -1,6 +1,6 @@
 html {
   scrollbar-width: thin;
-  scrollbar-color: #475152 #d1a42e;
+  scrollbar-color: #12405a #d1a42e;
 }
 
 html::-webkit-scrollbar {
@@ -12,7 +12,13 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #475152;
+  background-color: #12405a;
+}
+
+@media (max-width: 767px) {
+  html {
+    overflow-x: hidden;
+  }
 }
 
 #ascrail2000 {
@@ -679,6 +685,17 @@ header .slider .swiper-pagination {
   -webkit-transform: rotate(90deg) translateY(-50%);
           transform: rotate(90deg) translateY(-50%);
   height: 0;
+}
+
+@media (max-width: 767px) {
+  header .slider .swiper-pagination {
+    top: unset;
+    right: unset;
+    bottom: -50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 header .slider .swiper-pagination span {
@@ -1369,7 +1386,8 @@ html[dir="ltr"] .services-section .school-images {
 
 @media (max-width: 480px) {
   .services-section .shop-images div.mobile {
-    left: 26%;
+    left: 33%;
+    bottom: 50px;
   }
 }
 
@@ -1381,7 +1399,7 @@ html[dir="ltr"] .services-section .school-images {
 
 @media (max-width: 480px) {
   .services-section .shop-images div.bag1 {
-    right: 5%;
+    right: 10%;
   }
 }
 
@@ -1399,7 +1417,7 @@ html[dir="ltr"] .services-section .school-images {
 
 @media (max-width: 480px) {
   .services-section .shop-images div.bag2 {
-    left: 0;
+    left: 5%;
   }
 }
 
@@ -1417,7 +1435,8 @@ html[dir="ltr"] .services-section .school-images {
 
 @media (max-width: 480px) {
   .services-section .shop-images div.gift1 {
-    right: 10%;
+    right: 16%;
+    bottom: 65px;
   }
 }
 
@@ -1435,7 +1454,8 @@ html[dir="ltr"] .services-section .school-images {
 
 @media (max-width: 480px) {
   .services-section .shop-images div.gift2 {
-    left: -6%;
+    left: 4%;
+    bottom: 16%;
   }
 }
 
