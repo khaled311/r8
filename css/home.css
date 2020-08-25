@@ -153,6 +153,28 @@ ul.res {
           transform: none;
 }
 
+.after {
+  position: relative;
+}
+
+.after:after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 3px;
+  background-color: #d1a42e;
+  border-radius: 4px;
+  margin-top: 17px;
+  margin-bottom: 38px;
+}
+
+@media (max-width: 991px) {
+  .after:after {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @-webkit-keyframes flash {
   0% {
     opacity: 1;
@@ -563,7 +585,7 @@ header #particles-js {
 
 header .TopNav {
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   position: absolute;
   top: 0;
   left: 0;
