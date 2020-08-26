@@ -13,6 +13,57 @@
     <link rel="stylesheet" href="css/home.css"/>
   </head>
   <body>
+    <!-- About Pop Up-->
+    <div class="about-popup">
+      <div class="container">
+        <div class="head">
+          <h1>عن رواق<img src="images/close.svg" alt="" id="close1"/></h1>
+          <p>إننا الخيار الأمثل بكل ما نمتلمه من خبرات وما نقدمه من خدمات</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="pic js-tilt" data-tilt="data-tilt"><img src="images/eye.svg" alt=""/>
+              <h2>رؤيتنا</h2>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>ابتكار نظم برمجية مجربة</h2>
+            <p>نعيش في وسطٍ انقلبت فيه الأدوار والمعايير بصورةٍ لافتةٍ ومُزعِجةٍ في الكثير من الأحيان، فأصبحنا نرى مشاهد مفاجئةٍ ضمن الأسرة، كأن نجد سيطرةً غير منطقيةً من الطفل على أبويه، حيث تحوَّل الطفل من مخلوقٍ بريءٍ يتوجَّب عليه استكشاف العالم والتطوَّر والسعي ضمن كنف أبويه وتحت رعايتهما ومسؤوليتهما</p>
+          </div>
+          <div class="col-lg-6">
+            <h2>إرضاء عملاؤنا الكرام</h2>
+            <p>نعيش في وسطٍ انقلبت فيه الأدوار والمعايير بصورةٍ لافتةٍ ومُزعِجةٍ في الكثير من الأحيان، فأصبحنا نرى مشاهد مفاجئةٍ ضمن الأسرة، كأن نجد سيطرةً غير منطقيةً من الطفل على أبويه، حيث تحوَّل الطفل من مخلوقٍ بريءٍ يتوجَّب عليه استكشاف العالم والتطوَّر والسعي ضمن كنف أبويه وتحت رعايتهما ومسؤوليتهما</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="pic js-tilt" data-tilt="data-tilt"><img src="images/like.svg" alt=""/>
+              <h2>هدفنا</h2>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="pic js-tilt" data-tilt="data-tilt"><img src="images/logo-white.svg" alt=""/>
+              <h2>رؤيتنا</h2>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>رواق في سطور</h2>
+            <p>نعيش في وسطٍ انقلبت فيه الأدوار والمعايير بصورةٍ لافتةٍ ومُزعِجةٍ في الكثير من الأحيان، فأصبحنا نرى مشاهد مفاجئةٍ ضمن الأسرة، كأن نجد سيطرةً غير منطقيةً من الطفل على أبويه، حيث تحوَّل الطفل من مخلوقٍ بريءٍ يتوجَّب عليه استكشاف العالم والتطوَّر والسعي ضمن كنف أبويه وتحت رعايتهما ومسؤوليتهما</p>
+          </div>
+        </div>
+        <div class="numbers">
+          <div class="row">
+            <div class="col-lg-4"><span class="timer" data-from="0" data-to="100">100</span>
+              <p>عميل وثقوا بنا</p>
+            </div>
+            <div class="col-lg-4"><span class="timer" data-from="0" data-to="100">100</span>
+              <p>مشروع تم انجازه</p>
+            </div>
+            <div class="col-lg-4"><span class="timer" data-from="0" data-to="100">100</span>
+              <p>منتج جاهز ومجرب</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Loader-->
     <div class="loader"><img class="img-fluid" src="images/loader.svg" alt=""/></div>
     <!-- Mob Nav-->
@@ -23,11 +74,11 @@
       </div>
       <ul class="res">
         <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="about.html">عن رواق</a></li>
-        <li><a href="products.html">المنتجات</a></li>
+        <li><a class="pop" href="about.html" data-target="about-popup">عن رواق</a></li>
+        <li><a class="pop" href="products.html" data-target="products-popup">المنتجات</a></li>
         <li><a href="blog.html">مدونة رواق</a></li>
         <li><a href="our-work.html">أعمال رواق</a></li>
-        <li><a href="contact.html">تواصل معنا</a></li>
+        <li><a class="pop" href="contact.html" data-target="contact-popup">تواصل معنا</a></li>
       </ul>
     </div>
     <!-- Mob Nav-->
@@ -41,11 +92,11 @@
               <div class="content"><a class="logo" href="index.html"><img class="svg img-fluid" src="images/logo.svg" alt=""/></a>
                 <ul class="res links">
                   <li><a href="index.html">الرئيسية</a></li>
-                  <li><a href="about.html">عن رواق</a></li>
-                  <li><a href="products.html">المنتجات</a></li>
+                  <li><a class="pop" href="about.html" data-target="about-popup">عن رواق</a></li>
+                  <li><a class="pop" href="products.html" data-target="products-popup">المنتجات</a></li>
                   <li><a href="blog.html">مدونة رواق</a></li>
                   <li><a href="our-work.html">أعمال رواق</a></li>
-                  <li><a href="contact.html">تواصل معنا</a></li>
+                  <li><a class="pop" href="contact.html" data-target="contact-popup">تواصل معنا</a></li>
                 </ul><a class="teckit" href="#!"><img class="svg" src="images/teck.svg" alt=""/><span>تذكرة جديدة</span></a>
                 <div class="menuTriger"><img src="images/menu.png" alt=""/></div>
               </div>
@@ -401,6 +452,8 @@
     <script src="js/aos.js"></script>
     <script src="js/fancybox.min.js"></script>
     <script src="js/nicescroll.js"></script>
+    <script src="js/countTo.js"></script>
+    <script src="js/tilt.js"></script>
     <script src="js/main.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
   </body>

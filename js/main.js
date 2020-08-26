@@ -5,6 +5,40 @@ $(window).on("load", function () {
 });
 
 $(function () {
+    try {
+        const tilt = $(".js-tilt").tilt({
+            perspective: 1000,
+        });
+    } catch (err) {}
+    var a = 0;
+    $(".about-popup").on("scroll", function () {
+        if (
+            a === 0 &&
+            $(this).scrollTop() >=
+                $(".numbers").offset().top - $(".numbers").innerHeight()
+        ) {
+            try {
+                console.log(this);
+                $(".timer").countTo({
+                    speed: 1000,
+                });
+            } catch (err) {}
+            a = 1;
+        }
+    });
+
+    // Open Popup
+    $(".pop").on("click", function (e) {
+        e.preventDefault();
+        $("." + $(this).data("target")).addClass("open");
+        $("html").css("overflow", "hidden");
+    });
+    // Close Pop Up
+    $("#close1").on("click", function () {
+        $(this).parent().parent().parent().parent().removeClass("open");
+        $("html").css("overflow", "auto");
+    });
+
     // Categories Slider
     var headerswiper = new Swiper("header .swiper-container", {
         grabCursor: true,
