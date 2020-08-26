@@ -375,8 +375,8 @@ ul.res {
   -webkit-transform: none !important;
           transform: none !important;
   opacity: 1 !important;
-  -webkit-transition: 0.3s 0.3s;
-  transition: 0.3s 0.3s;
+  -webkit-transition: 1s 0.3s;
+  transition: 1s 0.3s;
 }
 
 .about-popup .head {
@@ -493,10 +493,8 @@ ul.res {
 
 .about-popup .row .col-lg-5,
 .about-popup .row .col-lg-6 {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  -webkit-transform: translateY(40px) scale(1.2);
-          transform: translateY(40px) scale(1.2);
+  -webkit-transform: translateY(100px) scale(1.2);
+          transform: translateY(100px) scale(1.2);
   opacity: 0;
   margin-bottom: 70px;
 }
@@ -585,9 +583,16 @@ ul.res {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1.8);
-          transform: translate(-50%, -50%) scale(1.8);
+  -webkit-transform: translate(-50%, -50%) scale(1.5);
+          transform: translate(-50%, -50%) scale(1.5);
   opacity: 0.3;
+}
+
+@media (max-width: 480px) {
+  .sideNav > img {
+    -webkit-transform: translate(-50%, -50%) scale(1.8);
+            transform: translate(-50%, -50%) scale(1.8);
+  }
 }
 
 html[dir="ltr"] .sideNav {
