@@ -1634,6 +1634,9 @@ ul.res {
   height: 126px;
   border-radius: 20px;
   margin-bottom: 26px;
+  color: #244d75;
+  font-size: 18px;
+  font-family: med;
 }
 
 .contact-popup .row .col-lg-6 form .field textarea::-webkit-input-placeholder {
