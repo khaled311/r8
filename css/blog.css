@@ -1059,6 +1059,14 @@ ul.res {
   display: none;
 }
 
+@media (max-width: 991px) {
+  .products-popup .offers-section .pro-slide {
+    margin-top: -86px;
+    border-radius: 0 56px 0 45px;
+    margin-bottom: 10px;
+  }
+}
+
 .products-popup .offers-section .pro-slide.slide {
   z-index: unset;
   position: unset;
