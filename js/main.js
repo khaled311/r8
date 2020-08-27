@@ -98,6 +98,29 @@ $(function () {
         },
     });
 
+    // Categories Slider
+    var proPicsswiper = new Swiper(".product-pics .swiper-container", {
+        grabCursor: true,
+        autoplay: {
+            delay: 5000,
+        },
+        loop: true,
+        spaceBetween: 16,
+        slidesPerView: 1,
+        pagination: {
+            el: ".product-pics .swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            992: {
+                slidesPerView: 2,
+            },
+        },
+    });
+
     // open Side Nav
     $(".menuTriger").on("click", function () {
         $(this).fadeOut();
@@ -263,6 +286,14 @@ $(function () {
 
     $("body").niceScroll({
         cursorwidth: "0px",
+    });
+
+    $(".about-popup, .products-popup").niceScroll({
+        cursorcolor: "#244d75",
+        cursorwidth: "8px",
+        background: "#d1a42e",
+        cursorborder: "none",
+        cursorborderradius: 0,
     });
 
     $(".products-popup .offer-box").on("click", function (e) {
