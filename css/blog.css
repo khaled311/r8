@@ -1531,7 +1531,7 @@ ul.res {
   font-size: 16px;
   font-family: med;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 991px) {
@@ -1783,6 +1783,12 @@ ul.res {
   .contact-popup .row .col-12 .contact-Min .content .cont:not(:last-child) {
     margin-right: 0;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-popup .row .col-12 .contact-Min .content .cont {
+    width: 272px !important;
   }
 }
 

@@ -1531,7 +1531,7 @@ ul.res {
   font-size: 16px;
   font-family: med;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 991px) {
@@ -1783,6 +1783,12 @@ ul.res {
   .contact-popup .row .col-12 .contact-Min .content .cont:not(:last-child) {
     margin-right: 0;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-popup .row .col-12 .contact-Min .content .cont {
+    width: 272px !important;
   }
 }
 
@@ -3074,7 +3080,9 @@ html[dir="ltr"] .services-section .school-images {
 }
 
 .services-section .shop-images div.mobile {
-  bottom: -45px;
+  bottom: -28px;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
   left: 40%;
   z-index: 5;
 }
@@ -3139,6 +3147,13 @@ html[dir="ltr"] .services-section .school-images {
   }
 }
 
+@media (max-width: 375px) {
+  .services-section .shop-images div.gift1 {
+    right: 5%;
+    bottom: 70px;
+  }
+}
+
 @media (max-width: 320px) {
   .services-section .shop-images div.gift1 {
     right: 0%;
@@ -3156,6 +3171,13 @@ html[dir="ltr"] .services-section .school-images {
     left: -4%;
     bottom: 16%;
     width: 175px;
+  }
+}
+
+@media (max-width: 375px) {
+  .services-section .shop-images div.gift2 {
+    left: 1%;
+    bottom: 16%;
   }
 }
 
