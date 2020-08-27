@@ -741,17 +741,31 @@ ul.res {
   height: 100%;
   z-index: 99999;
   padding: 80px 0 105px;
-  overflow-y: auto;
+  overflow-y: auto !important;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  scrollbar-width: thin !important;
+  scrollbar-color: #12405a #d1a42e !important;
 }
 
 @media (max-width: 991px) {
   .products-popup {
     padding-top: 105px;
   }
+}
+
+.products-popup::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+.products-popup::-webkit-scrollbar-track {
+  background-color: #d1a42e !important;
+}
+
+.products-popup::-webkit-scrollbar-thumb {
+  background-color: #12405a !important;
 }
 
 .products-popup.open {
@@ -915,7 +929,7 @@ ul.res {
   margin-bottom: 20px;
   background-color: #fff;
   text-align: center;
-  border-radius: 0 45px 0 0;
+  border-radius: 0 45px 0 45px;
   overflow: hidden;
   margin-top: -96px;
   position: relative;
@@ -930,13 +944,20 @@ ul.res {
 
 .products-popup .offers-section .pro-slide .pic {
   position: relative;
-  cursor: pointer;
+  overflow: hidden;
 }
 
 .products-popup .offers-section .pro-slide .pic > img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.products-popup .offers-section .pro-slide .pic:hover > img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .products-popup .offers-section .pro-slide .pic .label {

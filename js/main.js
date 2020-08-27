@@ -265,18 +265,27 @@ $(function () {
         cursorwidth: "0px",
     });
 
-    $(".products-popup .offer-box").on("click", function (e) {
+    $(".products-popup").niceScroll({
+        cursorwidth: "8px",
+        cursorcolor: "#244d75",
+        background: "#d1a42e",
+        cursorborder: "none",
+        cursorborderradius: 0,
+    });
+
+    $(".products-popup .slidaya").on("mouseenter", function (e) {
         e.preventDefault();
         $(this)
+            .find(".offer-box")
             .addClass("slide")
             .next(".pro-slide")
             .addClass("slide")
             .slideDown();
     });
 
-    $(".pro-slide > .pic").on("click", function () {
-        $(this).parent().removeClass("slide").slideUp();
-        $(this).parent().parent().find(".offer-box").removeClass("slide");
+    $(".products-popup .slidaya").on("mouseleave", function () {
+        $(this).find(".pro-slide").removeClass("slide").slideUp();
+        $(this).find(".offer-box").removeClass("slide");
     });
 
     jQuery("img.svg").each(function () {
