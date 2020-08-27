@@ -22,7 +22,9 @@ $(function () {
                 $(".timer").countTo({
                     speed: 1000,
                 });
-            } catch (err) {}
+            } catch (err) {
+                console.log(err);
+            }
             a = 1;
         }
     });
@@ -109,6 +111,29 @@ $(function () {
         slidesPerView: 1,
         pagination: {
             el: ".product-pics .swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            992: {
+                slidesPerView: 2,
+            },
+        },
+    });
+
+    // Categories Slider
+    var otherworkswiper = new Swiper(".our-work.other .swiper-container", {
+        grabCursor: true,
+        autoplay: {
+            delay: 5000,
+        },
+        loop: true,
+        spaceBetween: 16,
+        slidesPerView: 1,
+        pagination: {
+            el: ".our-work.other .swiper-pagination",
             clickable: true,
         },
         breakpoints: {
@@ -298,6 +323,8 @@ $(function () {
 
     $(".products-popup .offer-box").on("click", function (e) {
         e.preventDefault();
+        $(".products-popup .offer-box").removeClass("slide");
+        $(".products-popup .pro-slide").removeClass("slide").slideUp();
         $(this)
             .addClass("slide")
             .next(".pro-slide")
