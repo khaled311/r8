@@ -1,0 +1,22 @@
+.products-popup {
+  background-color: #13405b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  padding: 80px 0 105px;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.products-popup.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=products-inc.css.map */
