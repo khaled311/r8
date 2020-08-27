@@ -944,6 +944,7 @@ ul.res {
 
 .products-popup .offers-section .pro-slide .pic {
   position: relative;
+  cursor: pointer;
   overflow: hidden;
 }
 
