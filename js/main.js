@@ -181,13 +181,17 @@ $(function () {
     $(window).on("scroll", function () {
         if ($(window).scrollTop() >= $("header").innerHeight()) {
             $(".TopNav").addClass("back");
+            $(".pro-fixed-nav").addClass("back");
         } else {
             $(".TopNav").removeClass("back");
+            $(".pro-fixed-nav").removeClass("back");
         }
         if ($(window).scrollTop() >= $(".TopNav").innerHeight()) {
             $(".TopNav").addClass("hide");
+            $(".pro-fixed-nav").addClass("hide");
         } else {
             $(".TopNav").removeClass("hide");
+            $(".pro-fixed-nav").removeClass("hide");
         }
         AOS.refresh();
         if ($(window).scrollTop() >= 200) {
