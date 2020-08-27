@@ -2351,6 +2351,12 @@ header .head p {
   }
 }
 
+@media (max-width: 480px) {
+  .blog-posts .post .overlay {
+    bottom: -32px;
+  }
+}
+
 .blog-posts .post .overlay h2 {
   font-size: 22px;
   font-family: bold;
