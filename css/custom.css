@@ -807,6 +807,7 @@ ul.res {
   height: 100%;
   z-index: 99999;
   padding: 80px 0 105px;
+  overflow: auto !important;
   overflow-y: auto !important;
   opacity: 0;
   visibility: hidden;
@@ -819,6 +820,7 @@ ul.res {
 @media (max-width: 991px) {
   .products-popup {
     padding-top: 105px;
+    overflow: auto !important;
   }
 }
 
