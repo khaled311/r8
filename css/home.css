@@ -3780,6 +3780,7 @@ html[dir="ltr"] .offers-section .offer-box h3 {
 .testims .swiper-slide .pic img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border-radius: 50% 74% 68% 54% / 45% 52% 78% 81%;
 }
 
 .testims .swiper-slide:hover .pic img {

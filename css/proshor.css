@@ -2538,6 +2538,14 @@ header .head .content .details .download a img {
   overflow: hidden;
 }
 
+.product-pics .swiper-slide:nth-child(odd) {
+  border-radius: 70px 0 70px 0;
+}
+
+.product-pics .swiper-slide:nth-child(even) {
+  border-radius: 0 70px 0 70px;
+}
+
 .product-pics .swiper-slide img {
   width: 100%;
   -o-object-fit: cover;
@@ -2622,6 +2630,10 @@ header .head .content .details .download a img {
   background-color: #244d75;
 }
 
+.our-work .swiper-wrapper .swiper-slide {
+  overflow: hidden;
+}
+
 .our-work .swiper-wrapper .swiper-slide .wo-rad-1 .overlay,
 .our-work .swiper-wrapper .swiper-slide .wo-rad-1 .overlay1 {
   border-radius: 40px 0 40px 0;
@@ -2632,6 +2644,14 @@ header .head .content .details .download a img {
 .our-work .swiper-wrapper .swiper-slide .wo-rad-2 .overlay1 {
   border-radius: 0 40px 0 40px;
   overflow: hidden;
+}
+
+.our-work .swiper-wrapper .swiper-slide:nth-child(odd) {
+  border-radius: 40px 0 40px 0;
+}
+
+.our-work .swiper-wrapper .swiper-slide:nth-child(even) {
+  border-radius: 0 40px 0 40px;
 }
 
 .our-work .swiper-pagination {

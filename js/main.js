@@ -57,23 +57,6 @@ $(function () {
             el: "header .swiper-pagination",
             clickable: true,
         },
-        // breakpoints: {
-        //     0: {
-        //         slidesPerView: 1,
-        //     },
-        //     480: {
-        //         slidesPerView: 2,
-        //     },
-        //     992: {
-        //         slidesPerView: 3,
-        //     },
-        //     1600: {
-        //         slidesPerView: 4,
-        //     },
-        //     // 1700:{
-        //     //   slidesPerView: 2.5
-        //     // }
-        // },
     });
 
     // Categories Slider
@@ -103,9 +86,9 @@ $(function () {
     // Categories Slider
     var proPicsswiper = new Swiper(".product-pics .swiper-container", {
         grabCursor: true,
-        autoplay: {
-            delay: 5000,
-        },
+        // autoplay: {
+        //     delay: 5000,
+        // },
         loop: true,
         spaceBetween: 16,
         slidesPerView: 1,
@@ -126,9 +109,9 @@ $(function () {
     // Categories Slider
     var otherworkswiper = new Swiper(".our-work.other .swiper-container", {
         grabCursor: true,
-        autoplay: {
-            delay: 5000,
-        },
+        // autoplay: {
+        //     delay: 5000,
+        // },
         loop: true,
         spaceBetween: 16,
         slidesPerView: 1,
